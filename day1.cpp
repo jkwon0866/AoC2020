@@ -101,6 +101,7 @@ int main(){
 	string num_str;
 	vector<int> nums;
 	while(input_file >> num_str) nums.push_back(stoi(num_str));
+	input_file.close();
 	//for part 1
 	cout << "Product of two numbers (using naive method): " << NaiveTwoSum(nums) << endl;
 	cout << "Product of two numbers (using hash method): " << HashTwoSum(nums,2020) << endl;

@@ -35,6 +35,7 @@ int main(){
 		//count += ValidRangePass(num1, num2, letter[0], password);
 		count += ValidPositionPass(num1, num2, letter[0], password);
 	}
+	input_file.close();
 	cout << "number of valid passwords:" << count << endl;
 	return 0;
 }
