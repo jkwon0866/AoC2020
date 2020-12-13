@@ -37,11 +37,11 @@ int main(){
 	input_file.close();
 	//Note: Multiplying multiple NumTrees calls together gives the incorrect answer.
 	unsigned long long product = 1;//NumTrees(layout,1,1) * NumTrees(layout,3,1) * NumTrees(layout,5,1) * NumTrees(layout,7,1) * NumTrees(layout,1,2);
-	product *= NumTrees(layout,1,1);
+	//product *= NumTrees(layout,1,1);
 	product *= NumTrees(layout,3,1);
-	product *= NumTrees(layout,5,1);
-	product *= NumTrees(layout,7,1);
-	product *= NumTrees(layout,1,2);
+	//product *= NumTrees(layout,5,1);
+	//product *= NumTrees(layout,7,1);
+	//product *= NumTrees(layout,1,2);
 	cout << "The product of all trees encountered is: " << product << endl;
 	return 0;
 }
